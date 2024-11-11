@@ -1,0 +1,84 @@
+body {
+    background-image: url(images/—Pngtree—romantic\ couple\ banner_1010849.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    font-family: "Manrope", sans-serif;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #ff5666;
+    text-align: center;
+}
+
+p {
+    font-style: italic;
+    text-align: center;
+}
+
+#survey-form {
+    display: inline-block;
+}
+
+div {
+    margin: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    vertical-align: auto;
+    text-align: right;
+    font-weight: 500;
+    margin: 10px;
+}
+
+legend, input[type=submit] {
+    background-color: #ffccc9;
+    border-radius: 10px;
+    color: #685044;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+fieldset {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    border: #685044 solid 2px;
+    margin: 10px;
+}
+   
+
+input[type=text] {
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+}
+
+input[type=number], select, input[type=email], input[type=tel], textarea {
+    padding: 5px;
+    margin: 8px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+}
+
+input[type=radio] + label, input[type=checkbox] + label {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+label:hover {
+    color: #ff5666;
+}
+

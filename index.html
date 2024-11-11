@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <div id="title">
+            <h1>Help Us Find Your Perfect Match!</h1>
+            <p id="description">A fun, easy-to-use dating platform designed to help you find meaningful connections. With personalized profiles and smart matching features, it's simple to meet people who share your interests. Sign up today and start your journey toward finding love!</p>
+        </div>
+        <form id="survey-form" action="" method="post">
+            <fieldset>
+                <legend>Your Details</legend>
+                <div>
+                    <label id="name-label" for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+                </div>
+                <div>
+                    <label id="number-label" for="age">Age</label>
+                    <input type="number" id="age" name="age" min="18" max="80" placeholder="Enter your age" required />
+                    <label for="dropdown">Country</label>
+                    <select id="dropdown" name="country">
+                        <option value="" disabled selected>Choose a country</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="france">France</option>
+                        <option value="philippines">Philippines</option>
+                        <option value="japan">Japan</option>
+                        <option value="usa">U.S.A.</option>
+                        <option value="korea">Korea</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <input type="radio" id="woman" name="gender" value="woman" required />
+                    <label for="woman">Woman</label>
+                    <input type="radio" id="man" name="gender" value="man" />
+                    <label for="man">Man</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <div>
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@gmail.com" required />
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div>
+                    <label>Contact method(s)</label>      
+                    <input type="checkbox" id="emailCheckbox" name="contact" value="email" />
+                    <label for="emailCheckbox">Email</label>
+                    <input type="checkbox" id="phoneCheckbox" name="contact" value="phone" />
+                    <label for="phoneCheckbox">Phone</label>
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <textarea cols="30" rows="3" id="address" name="address"></textarea>
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" id="submit"/>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
